@@ -1,0 +1,259 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+header {
+    margin: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #eee;
+}
+
+/* Logo styles */
+.logo img {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+/* Brand name styles */
+.brand-name {
+    font-family: "Arial", sans-serif;
+    font-size: 32px;
+    font-weight: bolder;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+/* Cart styles */
+.cart {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.cart a {
+    font-family: "Arial", sans-serif;
+    font-size: 25px;
+}
+
+.cart-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.cart-link:hover {
+    color: #0baf02;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+
+.main-nav {
+    background-color: #f3f3f3;
+    list-style: none;
+    padding: 0 50px;
+    margin: 0 0 20px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.main-category {
+    position: relative;
+    display: inline-block;
+}
+
+.main-category a:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.main-category>a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Sub-categories */
+.sub-categories {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-category:hover .sub-categories {
+    display: block;
+}
+
+.sub-categories li {
+    position: relative;
+}
+
+.sub-categories a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Change text and background color on hover */
+.sub-categories a:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+/* Sub-sub-categories */
+.sub-summer-categories,
+.sub-winter-categories {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 150px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sub-categories li:hover .sub-summer-categories {
+    display: block;
+}
+
+.sub-categories li:hover .sub-winter-categories {
+    display: block;
+}
+
+
+.search-box {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-container input[type="text"] {
+    padding: 8px;
+    width: 40%;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 16px;
+    padding-right: 40px;
+    /* Adjust as needed */
+}
+
+.search-container button {
+    position: relative;
+    right: 35px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button i {
+    font-size: 16px;
+    color: #aaa;
+}
+
+.search-container button i:hover {
+    color: #333;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    /* Set a maximum width for the container */
+    margin: 0 auto;
+    /* Center the container */
+}
+
+.product-card {
+    flex: 0 0 calc(25% - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.product-image {
+    background-color: #ffffff;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.product-info {
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.product-info h3,
+.product-info p {
+    margin: 0;
+}
+
+.product-info button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+}
+
+
+.product-info button:hover {
+    background-color: #0056b3; 
+}
